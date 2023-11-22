@@ -11,6 +11,7 @@ struct ContentView: View {
     // MARK: - PROPERTIES
     
     var headers: [Header] = headersData
+    var facts: [Fact] = factsData
     
     // MARK: - BODY
     
@@ -28,12 +29,30 @@ struct ContentView: View {
                 }
                 
                 // MARK: - DISHES
+                
                 Text("Avocado Dishes")
                     .fontWeight(.bold)
                     .modifier(TitleModifier())
                 
                 DishesView()
                     .frame(maxWidth: 640)
+                
+                // MARK: - AVOCADO FACTS
+                
+                Text("Avocado Facts")
+                    .fontWeight(.bold)
+                    .modifier(TitleModifier())
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .top, spacing: 60) {
+                        ForEach(facts) { item in
+                        FactsView(fact: item)
+                        }
+                    }
+                    .padding(.vertical)
+                    .padding(.leading, 60)
+                    .padding(.trailing, 20)
+                }
                 
                 
                 // MARK: - FOOTER
@@ -70,5 +89,5 @@ struct TitleModifier: ViewModifier {
 // MARK: - PREVIEW
 
 #Preview {
-    ContentView(headers: headersData)
+    ContentView(headers: headersData, facts: factsData)
 }
