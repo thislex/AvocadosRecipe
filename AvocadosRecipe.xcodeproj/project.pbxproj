@@ -16,6 +16,11 @@
 		7F54CEC22B0CCE6700544CB1 /* RipeningStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F54CEC12B0CCE6700544CB1 /* RipeningStagesView.swift */; };
 		7F54CEC42B0CCE7200544CB1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F54CEC32B0CCE7200544CB1 /* SettingsView.swift */; };
 		7F54CEC62B0CCEAE00544CB1 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F54CEC52B0CCEAE00544CB1 /* AppView.swift */; };
+		7F80EC6D2B0DF89F004E1A76 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F80EC6C2B0DF89F004E1A76 /* HeaderView.swift */; };
+		7F80EC6F2B0E0487004E1A76 /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F80EC6E2B0E0487004E1A76 /* HeaderModel.swift */; };
+		7F80EC712B0E04E1004E1A76 /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F80EC702B0E04E1004E1A76 /* HeaderData.swift */; };
+		7F80EC732B0E191D004E1A76 /* DishesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F80EC722B0E191D004E1A76 /* DishesView.swift */; };
+		7F80EC752B0E2392004E1A76 /* FactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F80EC742B0E2392004E1A76 /* FactsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		7F54CEC12B0CCE6700544CB1 /* RipeningStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningStagesView.swift; sourceTree = "<group>"; };
 		7F54CEC32B0CCE7200544CB1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7F54CEC52B0CCEAE00544CB1 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		7F80EC6C2B0DF89F004E1A76 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		7F80EC6E2B0E0487004E1A76 /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderModel.swift; path = AvocadosRecipe/View/HeaderModel.swift; sourceTree = SOURCE_ROOT; };
+		7F80EC702B0E04E1004E1A76 /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderData.swift; path = AvocadosRecipe/Model/HeaderData.swift; sourceTree = SOURCE_ROOT; };
+		7F80EC722B0E191D004E1A76 /* DishesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DishesView.swift; path = AvocadosRecipe/Data/DishesView.swift; sourceTree = SOURCE_ROOT; };
+		7F80EC742B0E2392004E1A76 /* FactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,7 @@
 		7F54CEBC2B0CCE0600544CB1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				7F80EC702B0E04E1004E1A76 /* HeaderData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -92,6 +103,7 @@
 		7F54CEBD2B0CCE0F00544CB1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7F80EC6E2B0E0487004E1A76 /* HeaderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,8 +111,11 @@
 		7F54CEBE2B0CCE1700544CB1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7F80EC722B0E191D004E1A76 /* DishesView.swift */,
 				7F0145282B0CBD62003FAF79 /* ContentView.swift */,
+				7F80EC742B0E2392004E1A76 /* FactsView.swift */,
 				7F54CEBF2B0CCE4300544CB1 /* AvocadosView.swift */,
+				7F80EC6C2B0DF89F004E1A76 /* HeaderView.swift */,
 				7F54CEC12B0CCE6700544CB1 /* RipeningStagesView.swift */,
 				7F54CEC32B0CCE7200544CB1 /* SettingsView.swift */,
 				7F54CEC52B0CCEAE00544CB1 /* AppView.swift */,
@@ -185,6 +200,11 @@
 				7F54CEC22B0CCE6700544CB1 /* RipeningStagesView.swift in Sources */,
 				7F0145272B0CBD62003FAF79 /* AvocadosRecipeApp.swift in Sources */,
 				7F54CEC02B0CCE4300544CB1 /* AvocadosView.swift in Sources */,
+				7F80EC6F2B0E0487004E1A76 /* HeaderModel.swift in Sources */,
+				7F80EC712B0E04E1004E1A76 /* HeaderData.swift in Sources */,
+				7F80EC732B0E191D004E1A76 /* DishesView.swift in Sources */,
+				7F80EC752B0E2392004E1A76 /* FactsView.swift in Sources */,
+				7F80EC6D2B0DF89F004E1A76 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
